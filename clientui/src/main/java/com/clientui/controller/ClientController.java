@@ -133,12 +133,13 @@ public class ClientController {
      * Étape ()
      * Opération qui fait appel au microservice d'expédition pour récupérer une expédition
      * */
-    @RequestMapping("/suivi/{id}")
+    @RequestMapping(value = "/suivi/{id}")
     public String etatExpedition(@PathVariable int id, Model model) {
 
         Optional<ExpeditionBean> expe = expeditionProxy.etatExpedition(id);
+        ExpeditionBean expedition = expe.get();
 
-        model.addAttribute("expedition", expe);
+        model.addAttribute("expedition", expedition);
 
         return "EtatExpedition";
     }

@@ -2,12 +2,14 @@ package com.clientui.beans;
 
 public class ExpeditionBean {
 
-    public ExpeditionBean() {
-    }
+
 
     private int id;
     private int idCommande;
     private int etat;
+
+    public ExpeditionBean() {
+    }
 
     public int getId() {
         return id;

@@ -14,13 +14,20 @@
 
     <h1 class="text-center">Application Mcommerce</h1>
 
+    <br>
+    <br>
+    <br>
+    <h1 class="text-center">Exercice 2</h1>
+
+
+
     <div class="row">
         <div class="col-md-4 mx-auto mt-5 text-center">
 
             <div th:switch="${expedition.getEtat()}">
-                <p th:case=0>En préparation</p>
-                <p th:case=1>Expédiée</p>
-                <p th:case=2>Livrée</p>
+                <p th:case=0>En preparation</p>
+                <p th:case=1>Expediee</p>
+                <p th:case=2>Livree</p>
             </div>
 
         </div>
